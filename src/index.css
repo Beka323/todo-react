@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: "Lato", Sans-Serif;
+}
+/* App Style*/
+.App {
+    margin: 1em;
+}
+.App h2 {
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: italic;
+}
+.input-element {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.input-element .form {
+    width: 100%;
+    margin: 0 10px;
+    position: relative;
+}
+.input-element .form input {
+    position: absolute;
+    padding: 0.4em 0.7em;
+    width: 100%;
+    font-size: 15px;
+    border: 1.5px solid #082b0e;
+    border-radius: 14px;
+}
+.input-element .form input::placeholder {
+    font-size: 15px;
+    color: #082b0e;
+}
+.input-element .form button {
+    position: absolute;
+    padding: 0.4em 0;
+    right: 0;
+    width: 75px;
+    border: none;
+    margin-right: 1px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00ca12;
+    margin-top: 1.5px;
+    border-radius: 14px;
+    border: 1.5px solid #082b0e;
+    outline:none;
+}
+.clear-all {
+    margin: 25px 0 0 10px;
+    padding: 0.2em 1.2em;
+    color: #fff;
+    font-weight: 700;
+    border: 1.5px solid #082b0e;
+    border-radius: 15px;
+    background-color: #00ca12;
+}
+.task-list {
+    margin-top: 10px;
+    width: 100%;
+}
+.message {
+    color: #fff;
+    margin: 30px 0;
+    font-weight: 900;
+    text-align: center;
+}
+.task {
+    margin: 4px 0;
+    box-shadow:0px 0px 5px #87fe92;
+    border: 0.8px solid #00ca12;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 8px;
+    animation-name: glow;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-delay:0s;
+}
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.todo span label {
+    vertical-align: top;
+    margin-left: 5px;
+}
+.checked {
+    width: 15px;
+    height: 15px;
+    accent-color: #00ca12;
+}
+.todo button {
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    font-weight: 700;
+    color: #e30000;
+}
+.complated {
+    font-weight: 700;
+    text-decoration: line-through;
+    color: #d8d8d8;
+}
+.not-complated {
+    font-weight: 700;
+}
+.urgent {
+    color: #ff1b1b;
+    display: inline-block;
+    padding: 0px 9px;
+    border-radius: 8px;
+    border: 0.8px solid #ff1b1b;
+}
+.not-urgent {
+    color: #29b941;
+    display: inline-block;
+    padding: 0px 9px;
+    border-radius: 8px;
+    border: 0.8px solid #29b941;
+}
+@keyframes glow {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.25);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    75% {
+        transform: scale(0.75);
+    }
+    100% {
+        trasnform: scale(1);
+    }
+}
